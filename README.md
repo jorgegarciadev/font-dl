@@ -13,7 +13,7 @@ Modo de uso:
 
 Ejemplo:
 
-<pre>~$ ./font-dl.py www.engadget.com/media/style.css</pre>
+<pre>~$ ./font-dl.py http://www.engadget.com/media/style.css</pre>
 
 Este software está publicado bajo [licencia MIT](http://opensource.org/licenses/MIT).
 
