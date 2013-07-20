@@ -20,7 +20,7 @@ class fontDownloader():
     def cssDownloader(self):
         # search inside the css file for the fonts files and download them.
         html = self.response.read()
-        pattern = "(https?.\/\/)?([a-z\d\.-]+\.[a-z\.]{2,6})([\/a-z\s\.-]+)\/([a-z\d\.-]+\.(woff|eot|ttf|otf|svg))"
+        pattern = "(https?.\/\/)?([a-z\d\.-]+\.[a-z\.]{2,6})?([\/\w\s\.-]+)\/([\w\.-]+\.(woff|tff|otf|ttf))"
         fonts = re.finditer(pattern, html)
 
         for font in fonts:
