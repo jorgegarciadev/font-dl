@@ -44,6 +44,7 @@ class fontdl():
                 DownloadUrl = urljoin(self.url, item.group())
             else:
                 DownloadUrl = item.group()
+                
             filename = item.group(4)
             print("Descagando archivo: %s" % filename)
             urlretrieve(DownloadUrl, filename)
